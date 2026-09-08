@@ -1,0 +1,36 @@
+#print("recipe!") #outputting in the terminal/console/CLI
+
+#Use input as a function to get user input from the keyboard from the user
+#print(input("recipe"))
+#issue ^
+
+#TODO:
+    #- Display a message asking the user to enter a recipe name.
+    #- Read the input from the keyboard using input().
+    #- Return the entered value as a string.
+    #"""
+#[DONE]
+
+"""TODO:
+    - Create an empty list to store ingredients.
+    - Print a message telling the user to type ingredients one at a
+      time, and that typing 'Q' will stop the process.
+    - Use a while loop that keeps asking for input:
+        - If the input equals 'Q', break out of the loop.
+        - Otherwise, append the input to the ingredients list.
+    - Return the list of ingredients (without 'Q' in it).
+    """
+#[DONE BUT return command is highlighted red for now]
+
+"""TODO:
+    - Set up a starting value that is invalid (e.g., -1.0) so the
+      loop runs at least once.
+    - Use a while loop that continues as long as the value is
+      less than or equal to 0:
+        - Ask the user to enter a cooking time in minutes.
+        - Try converting the input to a float.
+        - If the conversion fails (non-numeric input), handle the
+          error (hint: try/except with ValueError) and keep the
+          value invalid so the loop repeats.
+    - Return the valid cooking time as a float.
+    """
