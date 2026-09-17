@@ -9,6 +9,16 @@ def display_menu():
     print ("4. Search a book title")
     print ("5. Exit")
 
+def Add_book():
+    #The user will use this option to add book details to their library.
+    new_book = {'title', 'author', 'year'}
+    #Information the user types in for the information of the book
+    title = input("Enter book title: ").strip().title()
+    author = input("Enter book author: ").strip().title()
+    year = input("Enter book author: ").strip().title()
+    #Comes up in the terminal to let the user type in the book information nicely.
+  
+
 def main():
     display_menu()
 
