@@ -7,7 +7,7 @@ def display_menu():
     print ("2. Remove a book")
     print ("3. List all book titles")
     print ("4. Search a book title")
-    print ("5. Exit")
+    print ("5. Save and Exit")
 
 def add_book():
     #The user will use this option to add book details to their library
@@ -23,7 +23,11 @@ def add_book():
     print(f"Approved! '{title}' has been added to the library.")
     #prints out that the title has been added to the personal library
 
-def remove_book():
+def remove_book(book_title, library_list):
+    """Using the def function to
+    use the 2nd option to remove a book using
+    a book name/title that is from the library list"""
+        
 
 
 def main():
