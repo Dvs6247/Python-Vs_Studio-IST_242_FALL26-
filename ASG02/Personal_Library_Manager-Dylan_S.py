@@ -9,18 +9,13 @@ def display_menu():
     print ("4. Search a book title")
     print ("5. Exit")
 
-def Add_book():
-<<<<<<< HEAD
+def add_book():
     #The user will use this option to add book details to their library
-=======
-    #The user will use this option to add book details to their library.
->>>>>>> 1669238b4f8f40cb37d9e40de00d3eae1aaefff6
     new_book = {'title', 'author', 'year'}
     #Information the user types in for the information of the book
     title = input("Enter book title: ").strip().title()
     author = input("Enter book author: ").strip().title()
     year = input("Enter book author: ").strip().title()
-<<<<<<< HEAD
     #Comes up in the terminal to let the user type in the book information nicely
     library = []
     library.append(new_book)
@@ -28,12 +23,8 @@ def Add_book():
     print(f"Approved! '{title}' has been added to the library.")
     #prints out that the title has been added to the personal library
 
-#def Remove_book():
+def remove_book():
 
-=======
-    #Comes up in the terminal to let the user type in the book information nicely.
-  
->>>>>>> 1669238b4f8f40cb37d9e40de00d3eae1aaefff6
 
 def main():
     display_menu()
