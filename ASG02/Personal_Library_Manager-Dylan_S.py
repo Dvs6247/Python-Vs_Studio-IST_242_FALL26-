@@ -85,6 +85,22 @@ def end_and_exit():
         
 def main():
     display_menu()
+    while True:
+        display_menu()
+        choice = input("Select an option (1-5): ").strip()
+
+        if choice == "1":
+            add_book(library)
+        elif choice == "2":
+            remove_book(library)
+        elif choice == "3":
+            book_list(library)
+        elif choice == "4":
+            search_books(library)
+        elif choice == "5":
+            end_and_exit()
+        else:
+            print("Invalid choice. Please select a number from 1 to 5.")
 
 if __name__ == "__main__":
     main()
