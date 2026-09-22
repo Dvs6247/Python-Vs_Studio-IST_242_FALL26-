@@ -4,13 +4,13 @@ import sys
 """Part of the picture of the code. These are the different options the user can do in their personal library manager.
 main() is needed for later after more of the code is added to execute all steps of the code."""
 def display_menu():
-    print("\n========== Personal Library Manager =========")
-    print ("Please select an option:")
-    print ("1. Add a book title")
-    print ("2. Remove a book")
-    print ("3. List all book titles")
-    print ("4. Search a book title")
-    print ("5. Save and Exit")
+        print("\n========== Personal Library Manager =========")
+        print ("Please select an option:")
+        print ("1. Add a book title")
+        print ("2. Remove a book")
+        print ("3. List all book titles")
+        print ("4. Search a book title")
+        print ("5. Save and Exit")
 
 def add_book():
     #The user will use this option to add book details to their library
@@ -23,7 +23,7 @@ def add_book():
     library = []
     library.append(new_book)
     #Creates a place to store the book data and puts the book into the personal library list
-    print(f"Approved! '{title}' has been added to the library.")
+    print(f"Approved! '{title}' has been added to your library.")
     #prints out that the title has been added to the personal library
 
 def remove_book(title, library):
