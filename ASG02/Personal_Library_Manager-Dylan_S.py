@@ -84,7 +84,6 @@ def end_and_exit():
         
         
 def main():
-    display_menu()
     while True:
         display_menu()
         choice = input("Select an option (1-5): ").strip()
@@ -96,7 +95,7 @@ def main():
         elif choice == "3":
             book_list(library)
         elif choice == "4":
-            search_books(library)
+            search_list(library)
         elif choice == "5":
             end_and_exit()
         else:
