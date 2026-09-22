@@ -37,7 +37,11 @@ def remove_book(title, library):
         either the title does show the user successfully typed it correctly and removed it or
         with the else command that the title wasn't typed correctly to be removed."""
 def book_list():
-        
+        if not book_list:
+             print("The library has no books listed.")
+             return
+"""Added to the book_list function:
+Added the command's output for if there are no books in the list"""
 
 
 def main():
