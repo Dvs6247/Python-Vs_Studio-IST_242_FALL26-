@@ -1,6 +1,3 @@
-import json
-import sys
-
 """Part of the picture of the code. These are the different options the user can do in their personal library manager.
 main() is needed for later after more of the code is added to execute all steps of the code."""
 def display_menu():
@@ -80,16 +77,12 @@ def search_list(book_list, title = None, author = None, year = None):
 """Added to search_list to match conditions for the title, author, and year
 to then return these results once searched."""
 
-def save_and_exit(book, filename ="library.json"):
-    print(f"\nSaving your library data to '{filename}'...")
-"""Added the save_and_exit function to save the your list as a JSON file 
-to then exit the program."""
-with open(encoding='f1') as file:
-        json.dump(file, indent=4)
-        print("List saved successfully! Have a nice day now!")
-        sys.exit("Exiting Program...")
-"""Added how the file can be saved and then it shows this output of after saving the file."""
-
+def end_and_exit():
+    print("Exiting Program... Have a nice day now!")
+    exit()
+"""Added the end_and_exit function and how the program ends and exits the user."""
+        
+        
 def main():
     display_menu()
 
