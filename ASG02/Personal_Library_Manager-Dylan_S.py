@@ -59,7 +59,11 @@ def search_list(book_list, title = None, author = None, year = None):
      a = author.lower().strip() if author else None
      y = year.lower().strip() if year else None
      #Used to have a clean output of the title, author, and year.
-     
+     for book in book_list:
+          book_title = str(book.get('title', ''))
+          book_author = str(book.get('author', ''))
+          book_year = str(book.get('year', ''))
+          #Added the for function to how it lists the book's year, author, and title when requested.
 
 def main():
     display_menu()
