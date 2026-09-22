@@ -55,9 +55,9 @@ def search_list(book_list, title = None, author = None, year = None):
      results = []
      """Created a search_list function to find a specific book in the book list
      With the parameters of the search list accepting a, title, author, year typed in."""
-     title.lower().strip() if title else None
-     author.lower().strip() if author else None
-     year.lower().strip() if year else None
+     t = title.lower().strip() if title else None
+     a = author.lower().strip() if author else None
+     y = year.lower().strip() if year else None
      #Used to have a clean output of the title, author, and year.
      
 
