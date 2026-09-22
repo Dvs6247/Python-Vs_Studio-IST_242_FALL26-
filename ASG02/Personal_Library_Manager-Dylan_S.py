@@ -1,3 +1,6 @@
+import json
+import sys
+
 """Part of the picture of the code. These are the different options the user can do in their personal library manager.
 main() is needed for later after more of the code is added to execute all steps of the code."""
 def display_menu():
