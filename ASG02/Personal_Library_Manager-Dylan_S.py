@@ -64,6 +64,15 @@ def search_list(book_list, title = None, author = None, year = None):
           book_author = str(book.get('author', ''))
           book_year = str(book.get('year', ''))
           #Added the for function to how it lists the book's year, author, and title when requested.
+          match = True
+          if t and t not in book_title:
+              match = False
+          if a and a not in book_author:
+              match = False
+          if y and str(y) != book_year:
+              match = False
+        #Added to search_list to match conditions for the title, author, and year.
+
 
 def main():
     display_menu()
