@@ -71,16 +71,12 @@ def search_list(book_list, title = None, author = None, year = None):
               match = False
           if y and str(y) != book_year:
               match = False
-<<<<<<< HEAD
           if (t or a or y) and match:
               results.append(book)
      return results
 """Added to search_list to match conditions for the title, author, and year
 to then return these results once searched."""
 
-=======
-        #Added to search_list to match conditions for the title, author, and year.
->>>>>>> 70215154d0f9ba680045adfc3622b5b2539d1548
 
 
 def main():
