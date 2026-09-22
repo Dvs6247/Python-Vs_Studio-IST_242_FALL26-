@@ -1,0 +1,36 @@
+#Test Case 1
+inventory = []
+
+def add_book(title, author, price, quantity):
+    book = {
+        'title': title,
+        'author': author,
+        'price': price,
+        'quantity': quantity
+    }
+    inventory.append(book)
+
+# Test case class
+class TestAddBook():
+    
+    def setUp(self):
+        # Clear inventory before each test
+        inventory.clear()
+        
+    def test_add_valid_book(self):
+        # Arrange
+        title = "The Hobbit"
+        author = "J.R.R. Tolkien"
+        price = 15.99
+        images = 5
+        
+        # Act
+        add_book(title, author, 15.99, 5)
+        
+        # Assert
+        self.assertEqual(len(inventory), 1)
+        self.assertEqual(inventory[0]['title'], "The Hobbit")
+        self.assertEqual(inventory[0]['author'], "J.R.R. Tolkien")
+
+if __name__ == '__main__':
+    main()
