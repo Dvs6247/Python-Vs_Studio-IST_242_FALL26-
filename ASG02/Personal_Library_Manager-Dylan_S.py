@@ -36,10 +36,7 @@ def remove_book(title, library):
         """Added the print command to show on the terminal
         either the title does show the user successfully typed it correctly and removed it or
         with the else command that the title wasn't typed correctly to be removed."""
-def remove_book(book_title, library_list):
-    """Using the def function to
-    use the 2nd option to remove a book using
-    a book name/title that is from the library list"""
+def book_list():
         
 
 
