@@ -9,15 +9,14 @@ def display_menu():
         print ("4. Search a book title")
         print ("5. Save and Exit")
 
-def add_book():
+def add_book(library):
     #The user will use this option to add book details to their library
-    new_book = {'title', 'author', 'year'}
     #Information the user types in for the information of the book
     title = input("Enter book title: ").strip().title()
     author = input("Enter book author: ").strip().title()
-    year = input("Enter book year: ").strip().title()
+    year = input("Enter book year: ").strip()
     #Comes up in the terminal to let the user type in the book information nicely
-    library = []
+    new_book = {'title': title, 'author': author, 'year': year}
     library.append(new_book)
     #Creates a place to store the book data and puts the book into the personal library list
     print(f"Approved! '{title}' has been added to your library.")
@@ -84,6 +83,7 @@ def end_and_exit():
         
         
 def main():
+    library = []
     while True:
         display_menu()
         choice = input("Select an option (1-5): ").strip()
@@ -103,3 +103,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
