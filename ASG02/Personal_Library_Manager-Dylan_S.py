@@ -80,6 +80,11 @@ def search_list(book_list, title = None, author = None, year = None):
 """Added to search_list to match conditions for the title, author, and year
 to then return these results once searched."""
 
+def save_and_exit(book, filename="library.json"):
+    print(f"\nSaving your library data to '{filename}'...")
+"""Added the save_and_exit function to save the your list as a JSON file 
+to then exit the program."""
+   
 
 
 def main():
