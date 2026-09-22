@@ -84,7 +84,7 @@ def save_and_exit(book, filename ="library.json"):
     print(f"\nSaving your library data to '{filename}'...")
 """Added the save_and_exit function to save the your list as a JSON file 
 to then exit the program."""
-with open('w', encoding='f1') as file:
+with open(encoding='f1') as file:
         json.dump(file, indent=4)
         print("List saved successfully! Have a nice day now!")
         sys.exit("Exiting Program...")
