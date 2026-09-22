@@ -50,7 +50,11 @@ def book_list():
 """Added to the book_list function: 
 Added the command's output for if there are no books in the list"""
 
-
+def search_list(books, query = None, title = None, author = None, year = None):
+     results = []
+     """Created a search_list function to find a specific book in the book list
+     With the parameters of the search list accepting a query, title, author, year typed in."""
+    
 def main():
     display_menu()
 
