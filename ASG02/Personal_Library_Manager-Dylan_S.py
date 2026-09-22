@@ -36,6 +36,7 @@ def remove_book(title, library):
         """Added the print command to show on the terminal
         either the title does show the user successfully typed it correctly and removed it or
         with the else command that the title wasn't typed correctly to be removed."""
+
 def book_list():
         for index, book in enumerate(book_list, start=1):
             print(" --- Current Book Inventory --- ")
@@ -50,11 +51,16 @@ def book_list():
 """Added to the book_list function: 
 Added the command's output for if there are no books in the list"""
 
-def search_list(books, query = None, title = None, author = None, year = None):
+def search_list(book_list, title = None, author = None, year = None):
      results = []
      """Created a search_list function to find a specific book in the book list
-     With the parameters of the search list accepting a query, title, author, year typed in."""
-    
+     With the parameters of the search list accepting a, title, author, year typed in."""
+     title.lower().strip() if title else None
+     author.lower().strip() if author else None
+     year.lower().strip() if year else None
+     #Used to have a clean output of the title, author, and year.
+     
+
 def main():
     display_menu()
 
