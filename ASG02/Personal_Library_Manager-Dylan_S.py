@@ -37,10 +37,17 @@ def remove_book(title, library):
         either the title does show the user successfully typed it correctly and removed it or
         with the else command that the title wasn't typed correctly to be removed."""
 def book_list():
+        for index, book in enumerate(book_list, start=1):
+            print(" --- Current Book Inventory --- ")
+            print (f"{index}. '{book['title']}' by {book['author']} and published in {book['year']}")
+            """Added to the book_list function:
+            added an index to be able to add books to the list
+            and added a print command to show the text 'current book inventory' 
+            with the book title, author, and year."""
         if not book_list:
              print("The library has no books listed.")
              return
-"""Added to the book_list function:
+"""Added to the book_list function: 
 Added the command's output for if there are no books in the list"""
 
 
