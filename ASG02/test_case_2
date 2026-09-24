@@ -1,0 +1,25 @@
+#Test Case 2
+
+def remove_book(library):
+    """Remove a book from the library by title."""
+    title = input("Enter the book title to remove: ").strip().title()
+
+    for book in library:
+        if book['title'].lower() == title.lower():
+            library.remove(book)
+            print(f"'{title}' has been successfully removed.")
+            return
+
+    print(f"Error: '{title}' was not found in the library.")
+
+def book_list(library):
+    if not library:
+        print("The library has no books listed.")
+        return
+
+    print(" --- Current Book Inventory --- ")
+    for index, book in enumerate(library, start=1):
+        print(f"{index}. '{book['title']}' by {book['author']} and published in {book['year']}")
+
+if __name__ == '__main__':
+    main()
