@@ -26,3 +26,5 @@ def get_years(self) -> list[int]:
 to call and then return that attribute
 Returns the get_years as well with a ValueError 
 when there is no list"""
+def __str__(self):
+        return f"({self._name} = {self._production},{self._year}"
