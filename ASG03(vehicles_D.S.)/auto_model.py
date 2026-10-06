@@ -1,5 +1,3 @@
-from auto_model import AutoModel
-
 class AutoModel:
     def __init__(self,
                 name:str,
