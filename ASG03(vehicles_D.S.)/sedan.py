@@ -12,4 +12,7 @@ class Sedan(Vehicle):
 """Added Sedan Class with the __init__ function 
 to call manufacturer, model, and mpg
 using self"""
-    
+def number_of_wheels(self) -> int:
+    return 4
+"""Added number_of_wheels function 
+to be called with self and return 4"""
