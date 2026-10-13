@@ -14,3 +14,15 @@ class Vehicle(ABC):
 """Added __init__ function and 
 using self to call specifically manufacture, model, and mpg"""
         
+@property
+def manufacturer(self) -> Manufacturer:
+    return self._Manufacturer
+
+@property
+def model(self) -> AutoModel:
+    return self._model
+
+@property
+def mpg(self) -> float:
+    return self._mpg
+"""Using @property classes for manufacturer, automodel, and mpg."""
