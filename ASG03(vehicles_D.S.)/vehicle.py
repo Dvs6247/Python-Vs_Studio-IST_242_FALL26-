@@ -1,4 +1,4 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 class Vehicle(ABC):
     """Using the Abstract Base Class type of class
@@ -31,3 +31,8 @@ def how_far_with(self, num_of_gallons: int) -> float:
     return self._mpg * num_of_gallons
 """Added the how_far_with function using the Abstract method 
 to then return self._mpg * num_of_gallons"""
+
+def number_of_wheels(self) -> int:
+    return 4
+"""Added number_of_wheels function to return the integer 4
+for now"""
