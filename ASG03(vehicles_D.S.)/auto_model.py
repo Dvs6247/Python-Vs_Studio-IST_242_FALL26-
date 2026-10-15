@@ -23,6 +23,7 @@ def years(self) -> list[int]:
                  print("ValueError. The list is empty.")
           return list(self.years)
 """Added @property as a class for name, production, and years
+(and now first_year)
 to call and then return that attribute
 Returns the get_years as well with a ValueError 
 when there is no list"""
