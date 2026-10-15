@@ -1,5 +1,8 @@
 from abc import ABC, abstractmethod
 
+from manufacturer import Manufacturer
+from auto_model import AutoModel
+
 class Vehicle(ABC):
     """Using the Abstract Base Class type of class
     for all the vehicles in the code"""
@@ -27,6 +30,10 @@ def mpg(self) -> float:
     return self._mpg
 """Using @property classes 
 for manufacturer, automodel, and mpg."""
+
+@property
+def release_year(self) -> int:
+    return self._model.first_year
 
 def how_far_with(self, num_of_gallons: int) -> float:
     return self._mpg * num_of_gallons
